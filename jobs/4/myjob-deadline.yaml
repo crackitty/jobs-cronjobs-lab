@@ -4,7 +4,7 @@ metadata:
   name: myjob
 spec:
   template:
-    spec:      
+    spec:
       containers:
       - name: myjob
         image: alpine
