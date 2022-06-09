@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: mycronjob
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: mycron-container
+            image: alpine
+            imagePullPolicy: IfNotPresent
+            command: ['sh', '-c', 'echo Job Pod is Running ; sleep 90']
+          restartPolicy: OnFailure
+          terminationGracePeriodSeconds: 0
+  concurrencyPolicy: Forbid
