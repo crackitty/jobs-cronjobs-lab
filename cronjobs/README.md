@@ -2,9 +2,9 @@
 
 We're going to demo the following type of `CronJobs`
 
-1. Basic CronJob that runs once a minute
-2. CronJob using `concurrencyPolicy: Allow`
-3. CronJob using `concurrencyPolicy: Forbid`
+1. [Basic CronJob that runs once a minute](./1/README.md)
+2. [CronJob using `concurrencyPolicy: Allow`](./2/README.md)
+3. [CronJob using `concurrencyPolicy: Forbid`](./3/README.md)
 
 Note about `concurrencyPolicy: Replace`
 
