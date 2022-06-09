@@ -18,3 +18,8 @@ what happens if the job runs past the scheduled time for a new job to start?
 
 The default is to allow the new job to be scheduled in parallel but you can configure
 that.
+
+## Labs
+
+- [Jobs](./jobs/README.md)
+- [CronJobs](./cronjobs/README.md)
